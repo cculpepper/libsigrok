@@ -488,7 +488,7 @@ static int configure_channel2_temperature(const struct sr_dev_inst *sdi,
 
 	devc->channel_meaning[1].mqflags &= ~SR_MQFLAG_DIODE;
 	devc->channel_meaning[1].mq = SR_MQ_TEMPERATURE;
-	devc->channel_meaning[1].unit = SR_UNIT_CELSIUS;
+	devc->channel_meaning[1].unit = SR_UNIT_KELVIN;
 
 	return SR_OK;
 }
